@@ -193,3 +193,23 @@ console.log('Nice! gulp!!!!!');
 $ node index.min.js
 ```
 
+これで毎回手動で縮小化とかコンパイルしなくてよくなった！
+
+以上でjs workshop #2は終了です。
+
+### （時間が余ったら）learnyounode
+
+Node.js入門者用workshopper
+
+http://nodeschool.io/
+
+```
+$ npm install -g learnyounode-jp
+$ cd ${適当なディレクトリ}
+$ learnyounode
+```
+
+
+## LICENSE
+
+Thanks to https://github.com/gulpjs/gulp
