@@ -78,10 +78,13 @@ $ less package.json
 ```
 $ vi package.json
 
+// 下記部分のように書き換える
 "scripts": {
     "start": "node index.js"
 },
+```
 
+```
 $ npm start
 
 index.jsが実行される。
