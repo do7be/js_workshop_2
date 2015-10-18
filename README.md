@@ -139,10 +139,10 @@ var gulp    = require("gulp"),
 
 // タスクの登録
 gulp.task('uglify', function() {
-  return gulp.src('src/index.js')
+  return gulp.src('src/program.js')
     .pipe(plumber())
     .pipe(uglify())
-    .pipe(rename('index.min.js'))
+    .pipe(rename('program.min.js'))
     .pipe(gulp.dest('./'));
 });
 
@@ -160,7 +160,7 @@ $ gulp uglify
 $gulp
 ```
 
-src/index.jsが縮小化され、index.min.jsが作成される。
+src/program.jsが縮小化され、program.min.jsが作成される。
 
 
 ### gulpでファイル監視して縮小処理を自動化してみる
@@ -181,7 +181,7 @@ $ gulp watch
 別のシェルを立ち上げる。
 
 ```
-$ vi src/index.js
+$ vi src/program.js
 
 // 下記を追加
 console.log('Nice! gulp!!!!!');
@@ -190,7 +190,7 @@ console.log('Nice! gulp!!!!!');
 保存すると、自動で縮小化され、index.min.jsが作成される。
 
 ```
-$ node index.min.js
+$ node program.min.js
 ```
 
 これで毎回手動で縮小化とかコンパイルしなくてよくなった！
