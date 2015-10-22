@@ -195,6 +195,13 @@ $ node program.min.js
 
 これで毎回手動で縮小化とかコンパイルしなくてよくなった！
 
+### cssの圧縮
+
+以下をインストールしてやってみる。
+
+https://www.npmjs.com/package/gulp-minify-css
+
+
 以上でjs workshop #2は終了です。
 
 ### （時間が余ったら）learnyounode
