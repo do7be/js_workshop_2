@@ -124,7 +124,7 @@ $ npm install --save-dev gulp
 gulpfileで使用するパッケージをインストールする。
 
 ```
-$ npm install --save-dev gulp-uglify gulp-rename gulp-plumber
+$ npm install --save-dev gulp gulp-uglify gulp-rename gulp-plumber
 ```
 
 
