@@ -44,7 +44,7 @@ package.jsonを書くことでNPMを気軽に使えるようにする。jsファ
     * 例えばjsファイル、cssファイルの縮小化。様々なタスクの自動化など。（タスクランナーを使うため）
   * Gitとものすごく相性が良い
     * リポジトリをcloneして`$ npm install`をするだけで基本的に実行環境が整う
-    * 開発環境を整えるには`$ npm install -dev`
+    * 開発環境だけを整えるには`$ npm install --only=dev`
 
 
 ## workshop本題
@@ -100,10 +100,11 @@ $ npm install --save-dev gulp
 
 * `--save-dev`をつけると、package.jsonのdevDependenciesにパッケージ名が書き込まれる
     * これは、開発環境にて使用するパッケージであることを明確にしている
-    * devDependenciesに書かれたパッケージは`npm install -dev`でインストールされる。
+    * devDependenciesに書かれたパッケージは`npm install --only=dev`でインストールされる。
+    * `$ npm install`だけでもOK。
 * `--save`でインストールすると、package.jsonのdependenciesに追記される
     * ここに書かれたパッケージは動作自体に必要なものであることを明記している
-    * こちらは`npm install`でインストールされる
+    * こちらも`npm install`でインストールされる
 * `-g`というのもよく使う。`--global`の略
     * このオプションをつけると、現在のホームディレクトリ直下にNPMパッケージがインストールされるため、今後同じパッケージを別のプロダクトでインストールする必要がなくなる
     * ツール系やコマンドライン系はグローバルで入れると良い
